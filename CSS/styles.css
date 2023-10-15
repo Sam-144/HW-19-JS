@@ -1,0 +1,309 @@
+body {
+    background-image: url(../Images/BG.png);
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 45, 91, 1);
+}
+.navitems {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    font-size: 30px;
+    color: white;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: Righteous;
+}
+.Hero {
+    background-image: url(../Images/Hero.png);
+    width: 100%;
+    height: 707px;
+    display: grid;
+    margin: 0 5px;
+    grid-template-rows: 18% 9.5% 20% 9.5% 9.5% 9.5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "austin austin"
+    "pickup order"
+    "line line"
+    "number number"
+    "menu menu";
+}
+h1{
+    grid-area: header;
+    text-align: center;
+    color: white;
+    font-family: Fjalla One;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+p2 {
+    grid-area: austin;
+    text-align: center;
+    color: white;
+    font-family: Fjalla One;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.herobutton {
+    grid-area: pickup;
+    width: 272px;
+    height: 77px;
+    font-family: Fjalla One;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 15px 0px rgba(255, 251, 0, 0.70);
+    padding: 10px 0px 10px 10px;
+    justify-self: center;
+}
+.order {
+    grid-area: order;
+    font-family: Fjalla One;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 15px 0px rgba(255, 251, 0, 0.70);
+    width: 272px;
+    height: 77px;
+    padding: 10px 0px 10px 10px;
+    justify-self: center;
+}
+hr {
+    grid-area: line;
+    text-align: center;
+    color: white;
+    width: 403px;
+    height: 1px;
+}
+ p {
+    grid-area: number;
+    text-align: center;
+    color: white;
+    font-family: Righteous;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+p3 {
+    grid-area: menu;
+    text-align: center;
+    color: white;
+    font-family: Fjalla One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.container1 {
+    display: grid;
+    margin: 0 5px;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "clock map"
+    "times congress"
+    "happyhour addy";
+}
+.clock {
+    grid-area: clock;
+    margin-top: 96px;
+    justify-self: center;
+}
+.map {
+    grid-area: map;
+    margin-top: 88px;
+    justify-self: center;
+}
+.time {
+    grid-area: times;
+    width: 363px;
+    height: 87px;
+    color: #002D5C;
+    text-align: center;
+    font-family: Righteous;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+h2 {
+    grid-area: congress;
+    justify-self: center;
+    width: 286px;
+    height: 55px;
+    color: #002D5C;
+    text-align: center;
+    font-family: Righteous;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+h3 {
+    grid-area: happyhour;
+    justify-self: center;
+    width: 338px;
+    height: 126px;
+    color: #D90429;
+    text-align: center;
+    font-family: Righteous;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+h4 {
+    grid-area: addy;
+    justify-self: center;
+    width: 403px;
+    height: 67px;
+    color: #006BA6;
+    text-align: center;
+    font-family: Righteous;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.featured {
+    height: 303px;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "oysters chicken drink";
+}
+.oysters {
+    width: 363px;
+    grid-area: oysters;
+    background-image: url(../Images/Oysters.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-self: center;
+}
+.chicken {
+    width: 363px;
+    grid-area: chicken;
+    background-image: url(../Images/Chicken\ Fried\ Steak.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-self: center;
+}
+.drink {
+    width: 363px;
+    grid-area: drink;
+    background-image: url(../Images/IMG_4566\ 2.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-self: center;
+}
+#reviews {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: 
+    "headline headline headline"
+    "feat star rev";
+}
+h5 {
+    grid-area: headline;
+    width: 410px;
+    height: 66px;
+    color: #D90429;
+    text-align: center;
+    font-family: Fjalla One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: center;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+.feat {
+    grid-area: feat;
+    width: 520px;
+    height: 478px;
+    justify-content: center;
+    margin-left: 15%;
+}
+.star {
+    grid-area: star;
+    justify-content: center;
+}
+.rev {
+    grid-area: rev;
+    justify-content: center;
+}
+p8 {
+    display: flex;
+    justify-content: flex-start;
+    width: 557px;
+    height: 85px;
+    width: 557px;
+    color: #000;
+    text-align: center;
+    font-family: Righteous;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 7%;
+    margin-top: -2%;
+}
+.footimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+#footer {
+    background-color: #0C6BA6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 159px;
+}
+.contact {
+    color: white;
+    background-color: red;
+    width: 159.726px;
+    height: 50px;
+    border-radius: 5px;
+    border: 3px solid black;
+    align-self: flex-end;
+    order: 4;
+    margin-right: 85px;
+    margin-bottom: 79px;
+    margin-top: 30px;
+}
+@media only screen and (max-width: 600px) {
+    .featured {
+        margin-top: 5%;
+        grid-template-rows: repeat(3, 303px);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "oysters"
+        "chicken"
+        "drink";
+    }
+}
